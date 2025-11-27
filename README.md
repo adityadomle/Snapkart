@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🛒 SnapKart – Full-Stack Real-Time Grocery Platform  
+> A high-performance **Next.js 16** application engineered as a Blinkit-style real-time delivery ecosystem — featuring multi-role architecture, event-driven updates, AI-powered communication and production-ready data models.
 
-## Getting Started
+---
 
-First, run the development server:
+## ⚙️ Tech Stack  
+**Next.js 16 • TypeScript • MongoDB/Mongoose • NextAuth • Socket.io • Leaflet Maps • Gemini API • Framer Motion • Tailwind • Vercel**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ✨ Platform Highlights  
+- 🛍️ **End-to-End Grocery Workflow** — discovery ➜ cart ➜ checkout ➜ rider assignment ➜ tracking  
+- 🧩 **Modular Architecture** — clear separation for user, admin and delivery agents  
+- ⚡ **Event-Driven Realtime Layer** using Socket.io (order lifecycle, rider updates, ETA changes)  
+- 🔐 **Auth Boundaries** — protected routes, role-scoped dashboards & secure sessions (NextAuth JWT)  
+- 🌐 **Live Map Infrastructure** with Leaflet + server updates for rider location streaming  
+- 🤖 **AI Conversation Layer** — Gemini-powered chat between customer ↔ delivery partner  
+- 📦 **Inventory + Product Engine** — variant support, pricing rules, and category segmentation  
+- 🧾 **Order Kernel** — status pipeline (PLACED → PACKED → OUT_FOR_DELIVERY → DELIVERED)  
+- 📊 **Admin Analytics** — order volume, active riders, product insights  
+- 🛵 **Delivery Companion App** — task queue, route preview, map pings  
+- 🎞️ **Cinematic UX** — Framer Motion transitions, animated modals, adaptive micro-interactions  
+- 🛡️ **API Hardened** — input validation, rate limits, structured error layer  
+- 📱 **Mobile-First Layout** optimized for low-end devices  
+- 🚀 **Vercel Deployment** with edge-optimized routes and ISR where needed  
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🔱 Role-Based Modules  
+### 👤 User  
+- Browsing, cart, checkout  
+- Live order tracking  
+- AI help & chat  
+- Address book + saved carts  
 
-## Learn More
+### 🛠️ Admin  
+- Product CRUD + inventory  
+- Order management console  
+- User/Delivery partner overview  
+- Real-time dashboard  
 
-To learn more about Next.js, take a look at the following resources:
+### 🛵 Delivery Partner  
+- Accept / reject tasks  
+- Live navigation feed  
+- AI chat  
+- Status update pipeline  
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📌 Core Pages  
+- **Home / Categories**  
+- **Product Listing + Details**  
+- **Cart / Checkout**  
+- **Order Tracking (Live Map)**  
+- **Admin Console**  
+- **Delivery Dashboard**  
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🗄️ Database Schemas  
+- **User** – roles, addresses, auth  
+- **Product** – category, price, stock, images  
+- **Order** – items, totals, ETA, states  
+- **Rider** – location, status, active deliveries  
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## License  
+MIT © 2025 — Aditya Domle  
