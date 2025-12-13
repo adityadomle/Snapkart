@@ -2,7 +2,7 @@ import React from 'react'
 
 function EditRoleMobile() {
   return (
-    <div>EditRoleMobile</div>
+    <div className='flex flex-col min-h-screen p-6 w-full bg-yellow-300'></div>
   )
 }
 
